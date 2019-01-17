@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="container vh-100 d-flex align-items-center justify-content-center">
+        <div>
+            <h1 class="h3">짤방 검색기</h1>
+        </div>
+        <form action="/search" class = "form-inline">
+            <div class="form-group form-inline">
+                <input name="query" type="text" class="form-control" placeholder="검색어를 입력해주세요">
+                <button type="submit" class="btn btn-dark">검색</button>
+            </div>
+        </form>            
+    </div>        
+{% endblock %}

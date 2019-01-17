@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="container py-5">
+        <div class="d-flex align-items-center">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                {% for jjal in jjals%}
+                <div class="card col-3" style="width: 18rem;">
+                    <img src="{{jjal[0]}}" class="card-img-top" height = "200rem" width = "18rem" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">{{jjal[1]}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
